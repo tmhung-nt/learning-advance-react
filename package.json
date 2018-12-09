@@ -9,7 +9,8 @@
   "scripts": {
     "dev": "nodemon --exec babel-node lib/server.js",
     "webpack": "webpack -wd",
-    "test": "jest --watch"
+    "test": "jest --watch",
+    "serve-dev": "npm run dev && webpack --config webpack.config.js"
   },
   "babel": {
     "presets": [
